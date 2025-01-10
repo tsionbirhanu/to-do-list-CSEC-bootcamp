@@ -26,7 +26,7 @@
                 <button id="mode">
                     <span class="material-symbols-outlined">
                         dark_mode
-                        </span>
+                    </span>
                 </button>
             </div>
         </div>
@@ -45,13 +45,19 @@
                 </button>
             </div>
         </div>
-     <div class="modal" id="modal">
+        <div class="show">
+
+        </div>
+        <div id="taskList" class="task-list">
+            <!-- Tasks will be dynamically added here -->
+        </div>
+        <div class="modal" id="modal">
         <div class="modal-content">
             <h2>NEW NOTE</h2>
             <input type="text" id="noteInput" placeholder="Input your note...">
             <div class="modal-buttons">
-                <button id="modal-btn" class="cancelBtn">CANCEL</button>
-                <button id="modal-btn" class="applyBtn">APPLY</button>
+                <button class="modal-btn" id="cancelBtn">CANCEL</button>
+                <button class="modal-btn" id="applyBtn">APPLY</button>
             </div>
         </div>
     </div>
