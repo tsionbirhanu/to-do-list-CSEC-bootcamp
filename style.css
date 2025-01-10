@@ -1,87 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    background-color: #ffffff;
-    /* color: #333333; */
-    min-height: 100vh;
-}
-
 .todo-container {
-    max-width: 600px;
-    margin: 40px auto;
-    padding: 0 20px;
+   /
+    width:750px;
+    height:710px;
+    left:325px;
 }
-
+.head{
+    width:750px;
+    height:135px;
+    padding-top: 40px;
+    gap:18px;
+    margin-left: 280px;
+}
 .myh1 {
+    width:100%;
+    height:39px;
+    font-family: kanit;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
     text-align: center;
-    margin-bottom: 32px;
-    color:rgba(0, 0, 0, 0.909);
+    margin-bottom: 12px;
+    color:#252525;
 }
-
 .search-content {
     display: flex;
     align-items: center;
     gap: 20px;
     margin-bottom: 30px;
+    width: 750px;
+    height: 38px;
+    gap:16px;
 }
-
 .search-input {
     flex: 1;
     position: relative;
 }
-
 #search {
-    width: 100%;
-    padding: 10px 20px 10px 10px;
+    width: 595px;
+    padding: 8px 16px 8px 16px;
     border: 1px solid #6C63FF;
     border-radius: 5px;
-    font-size: 16px;
-    height:32px;
+    /* font-size: 16px; */
+    height:38px;
+    gap:436px;
 }
-
 #srch {
+    width:21px;
+    height:21px;
+    color:#6C63FF;
     position: absolute;
     right: 15px;
-    top: 50%; 
-    /* bottom: 80%; */
+    top: 25px; 
+    bottom: 690px;
+    left:565px;
     transform: translateY(-50%);
-    color: #6C63FF;
+    text-align: center;
+    /* margin-left: 500px; */
 }
-
+.storage{
+    width: 750px;
+    height:575px;
+    top:135px;
+}
+#todo-list{
+   width: 520;
+    height: 545px;
+    top:30px;
+    left:115px;
+}
 #options {
-    padding: 12px 20px;
+    width:85px;
+    height:38px;
+    padding: 8px 16px 8px 16px;
     border: none;
     border-radius: 5px;
     background-color: #6C63FF;
-    color:  #fff;
+    color:  #F7F7F7;
     cursor: pointer;
     font-size: 14px;
-
     
 }
 option{
     height:32px;
 }
 #mode {
-    padding: 12px;
+    width:38px;
+    height:38px;
+    padding: 10px;
     border: none;
     border-radius: 5px;
     background-color: #6C63FF;
     color: #ffffff;
     cursor: pointer;
 }
-
+#mode:hover{
+    width: 28px;
+    height: 28px;
+    top: 755.87px;
+    left: 302px;
+    gap: 0px;
+    opacity: 0px;
+    angle: 39.66 deg;
+}
 #add {
     position: fixed;
-    bottom: 30px;
-    right: 10px;
+    margin-bottom: 20px; 
+    /* right: 80px; */
+    left:980px;
+    top:510px;
     width: 50px;
     height: 50px;
     border: none;
+    opacity: 1;
     border-radius: 50%;
     background-color: #6C63FF;
     color: #ffffff;
@@ -91,13 +127,12 @@ option{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: 330px;
+    /* margin-right: 330px; */
 }
 
 #task-list {
     list-style: none;
 }
-
 .task-item {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -108,39 +143,32 @@ option{
     justify-content: space-between;
     align-items: center;
 }
-
 .task {
     display: flex;
     align-items: center;
     gap: 15px;
 }
-
 .checkbox {
     width: 20px;
     height: 20px;
     cursor: pointer;
 }
-
 .task p {
     font-size: 16px;
 }
-
 .task.completed p {
     text-decoration: line-through;
     color: #888888;
 }
-
 .icons {
     display: flex;
     gap: 15px;
 }
-
 .icons i {
     color: #6C63FF;
     cursor: pointer;
     font-size: 18px;
 }
-
 .empty-state {
     text-align: center;
     padding: 50px 0;
@@ -149,12 +177,87 @@ option{
 }
  
 .empty-state img {
-    width: 200px;
-    margin-bottom: 20px;
-
+    width: 221px;
+    height: 174px;
+    margin-left:540px;
+    margin-top: 20px;
 }
-
 .empty-state p {
     color: #0e0d0d;
-    font-size: 16px;
+    width: 69px;
+height: 20px;
+margin-top: 10px;
+margin-left: 620px;
+gap: 0px;
+opacity: 0px;
+font-family: Kanit;
+font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+
 } 
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 400px;
+}
+
+.modal-content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#noteInput {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.modal-btn {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#cancelBtn {
+    background: #f1f1f1;
+}
+
+#applyBtn {
+    background: #6c5ce7;
+    color: white;
+}
+
