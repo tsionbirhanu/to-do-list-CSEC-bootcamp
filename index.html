@@ -6,6 +6,7 @@
     <title>TODO LIST</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="icon" type="icon" href="icon.jpg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,9 +19,9 @@
                     <i class="fa-sharp fa-solid fa-magnifying-glass" id="srch"></i>
                 </div>
                 <select id="options">
-                    <option value="ALL">ALL</option>
-                    <option value="Complete">Complete</option>
-                    <option value="Incomplete">Incomplete</option>
+                    <option value="ALL" id="all">ALL</option>
+                    <option value="Complete"id="all">Complete</option>
+                    <option value="Incomplete"id="all">Incomplete</option>
                 </select>
                 <button id="mode">
                     <span class="material-symbols-outlined">
@@ -32,25 +33,28 @@
         <div class="storage">
             <div id="todo-list">
                 <ul id="task-list">
-                    <!-- <li></li> -->
                 </ul>
             </div>
+            <div class="empty-state">
+            <img src="Detective-check-footprint 1.png" alt="Empty state">
+                <p>Empty...</p>
+                        </div>
             <div class="cont">
-                <button id="add" type="button">
+                <button id="add">
                     <i class="fas fa-plus" id="plus"></i>
                 </button>
             </div>
         </div>
-    </div>
-    <div class="modal" id="modal">
+     <div class="modal" id="modal">
         <div class="modal-content">
             <h2>NEW NOTE</h2>
             <input type="text" id="noteInput" placeholder="Input your note...">
             <div class="modal-buttons">
-                <button class="modal-btn" id="cancelBtn">CANCEL</button>
-                <button class="modal-btn" id="applyBtn">APPLY</button>
+                <button id="modal-btn" class="cancelBtn">CANCEL</button>
+                <button id="modal-btn" class="applyBtn">APPLY</button>
             </div>
         </div>
+    </div>
     </div>
 
     <script src="script.js"></script>
